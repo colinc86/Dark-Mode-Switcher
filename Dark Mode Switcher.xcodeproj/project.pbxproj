@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5536A2B21AA44A6200472B0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5536A2B11AA44A6200472B0D /* AppDelegate.m */; };
+		5536A2B41AA44A6200472B0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5536A2B31AA44A6200472B0D /* main.m */; };
+		5536A2B61AA44A6200472B0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5536A2B51AA44A6200472B0D /* Images.xcassets */; };
+		5536A2B91AA44A6200472B0D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5536A2B71AA44A6200472B0D /* MainMenu.xib */; };
+		5536A2C51AA44A6300472B0D /* Dark_Mode_SwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5536A2C41AA44A6300472B0D /* Dark_Mode_SwitcherTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5536A2BF1AA44A6300472B0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5536A2A31AA44A6200472B0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5536A2AA1AA44A6200472B0D;
+			remoteInfo = "Dark Mode Switcher";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5536A2AB1AA44A6200472B0D /* Dark Mode Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Mode Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5536A2AF1AA44A6200472B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5536A2B01AA44A6200472B0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5536A2B11AA44A6200472B0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5536A2B31AA44A6200472B0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5536A2B51AA44A6200472B0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5536A2B81AA44A6200472B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5536A2BE1AA44A6300472B0D /* Dark Mode SwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dark Mode SwitcherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5536A2C31AA44A6300472B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5536A2C41AA44A6300472B0D /* Dark_Mode_SwitcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dark_Mode_SwitcherTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5536A2A81AA44A6200472B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5536A2BB1AA44A6300472B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5536A2A21AA44A6200472B0D = {
+			isa = PBXGroup;
+			children = (
+				5536A2AD1AA44A6200472B0D /* Dark Mode Switcher */,
+				5536A2C11AA44A6300472B0D /* Dark Mode SwitcherTests */,
+				5536A2AC1AA44A6200472B0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5536A2AC1AA44A6200472B0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5536A2AB1AA44A6200472B0D /* Dark Mode Switcher.app */,
+				5536A2BE1AA44A6300472B0D /* Dark Mode SwitcherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5536A2AD1AA44A6200472B0D /* Dark Mode Switcher */ = {
+			isa = PBXGroup;
+			children = (
+				5536A2B01AA44A6200472B0D /* AppDelegate.h */,
+				5536A2B11AA44A6200472B0D /* AppDelegate.m */,
+				5536A2B51AA44A6200472B0D /* Images.xcassets */,
+				5536A2B71AA44A6200472B0D /* MainMenu.xib */,
+				5536A2AE1AA44A6200472B0D /* Supporting Files */,
+			);
+			path = "Dark Mode Switcher";
+			sourceTree = "<group>";
+		};
+		5536A2AE1AA44A6200472B0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5536A2AF1AA44A6200472B0D /* Info.plist */,
+				5536A2B31AA44A6200472B0D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5536A2C11AA44A6300472B0D /* Dark Mode SwitcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				5536A2C41AA44A6300472B0D /* Dark_Mode_SwitcherTests.m */,
+				5536A2C21AA44A6300472B0D /* Supporting Files */,
+			);
+			path = "Dark Mode SwitcherTests";
+			sourceTree = "<group>";
+		};
+		5536A2C21AA44A6300472B0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5536A2C31AA44A6300472B0D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5536A2AA1AA44A6200472B0D /* Dark Mode Switcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5536A2C81AA44A6300472B0D /* Build configuration list for PBXNativeTarget "Dark Mode Switcher" */;
+			buildPhases = (
+				5536A2A71AA44A6200472B0D /* Sources */,
+				5536A2A81AA44A6200472B0D /* Frameworks */,
+				5536A2A91AA44A6200472B0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dark Mode Switcher";
+			productName = "Dark Mode Switcher";
+			productReference = 5536A2AB1AA44A6200472B0D /* Dark Mode Switcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5536A2BD1AA44A6300472B0D /* Dark Mode SwitcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5536A2CB1AA44A6300472B0D /* Build configuration list for PBXNativeTarget "Dark Mode SwitcherTests" */;
+			buildPhases = (
+				5536A2BA1AA44A6300472B0D /* Sources */,
+				5536A2BB1AA44A6300472B0D /* Frameworks */,
+				5536A2BC1AA44A6300472B0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5536A2C01AA44A6300472B0D /* PBXTargetDependency */,
+			);
+			name = "Dark Mode SwitcherTests";
+			productName = "Dark Mode SwitcherTests";
+			productReference = 5536A2BE1AA44A6300472B0D /* Dark Mode SwitcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5536A2A31AA44A6200472B0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Colin Campbell";
+				TargetAttributes = {
+					5536A2AA1AA44A6200472B0D = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					5536A2BD1AA44A6300472B0D = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 5536A2AA1AA44A6200472B0D;
+					};
+				};
+			};
+			buildConfigurationList = 5536A2A61AA44A6200472B0D /* Build configuration list for PBXProject "Dark Mode Switcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5536A2A21AA44A6200472B0D;
+			productRefGroup = 5536A2AC1AA44A6200472B0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5536A2AA1AA44A6200472B0D /* Dark Mode Switcher */,
+				5536A2BD1AA44A6300472B0D /* Dark Mode SwitcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5536A2A91AA44A6200472B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5536A2B61AA44A6200472B0D /* Images.xcassets in Resources */,
+				5536A2B91AA44A6200472B0D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5536A2BC1AA44A6300472B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5536A2A71AA44A6200472B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5536A2B41AA44A6200472B0D /* main.m in Sources */,
+				5536A2B21AA44A6200472B0D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5536A2BA1AA44A6300472B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5536A2C51AA44A6300472B0D /* Dark_Mode_SwitcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5536A2C01AA44A6300472B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5536A2AA1AA44A6200472B0D /* Dark Mode Switcher */;
+			targetProxy = 5536A2BF1AA44A6300472B0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5536A2B71AA44A6200472B0D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5536A2B81AA44A6200472B0D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5536A2C61AA44A6300472B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5536A2C71AA44A6300472B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5536A2C91AA44A6300472B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Dark Mode Switcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5536A2CA1AA44A6300472B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Dark Mode Switcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5536A2CC1AA44A6300472B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dark Mode SwitcherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dark Mode Switcher.app/Contents/MacOS/Dark Mode Switcher";
+			};
+			name = Debug;
+		};
+		5536A2CD1AA44A6300472B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dark Mode SwitcherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dark Mode Switcher.app/Contents/MacOS/Dark Mode Switcher";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5536A2A61AA44A6200472B0D /* Build configuration list for PBXProject "Dark Mode Switcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5536A2C61AA44A6300472B0D /* Debug */,
+				5536A2C71AA44A6300472B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5536A2C81AA44A6300472B0D /* Build configuration list for PBXNativeTarget "Dark Mode Switcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5536A2C91AA44A6300472B0D /* Debug */,
+				5536A2CA1AA44A6300472B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5536A2CB1AA44A6300472B0D /* Build configuration list for PBXNativeTarget "Dark Mode SwitcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5536A2CC1AA44A6300472B0D /* Debug */,
+				5536A2CD1AA44A6300472B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5536A2A31AA44A6200472B0D /* Project object */;
+}
