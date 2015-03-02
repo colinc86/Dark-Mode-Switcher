@@ -49,19 +49,19 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="147.5" y="289.5"/>
+            <point key="canvasLocation" x="92.5" y="275.5"/>
         </menu>
         <window title="Dark Mode Switcher" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="DMSAbout" animationBehavior="default" id="tfm-aF-3LZ" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="90" y="125" width="273" height="34"/>
+            <rect key="contentRect" x="90" y="125" width="273" height="79"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="cRO-De-KhY">
-                <rect key="frame" x="0.0" y="3" width="273" height="34"/>
+                <rect key="frame" x="0.0" y="5" width="273" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Nhk-WH-KPG">
-                        <rect key="frame" x="18" y="17" width="237" height="17"/>
+                        <rect key="frame" x="18" y="62" width="237" height="17"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="fOT-tH-e9i"/>
                         </constraints>
@@ -72,7 +72,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7ej-c7-nvz">
-                        <rect key="frame" x="18" y="0.0" width="237" height="17"/>
+                        <rect key="frame" x="18" y="45" width="237" height="17"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="2c0-jy-o07"/>
                         </constraints>
@@ -82,17 +82,54 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-oa-iia">
+                        <rect key="frame" x="20" y="42" width="233" height="5"/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-5y-BXS">
+                        <rect key="frame" x="18" y="22" width="237" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="vES-AV-4iy"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Based on NinjaMode © 2014 NSRover" id="9MM-Ha-DgY">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5eF-rA-hup">
+                        <rect key="frame" x="18" y="8" width="237" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Zmw-j3-GdH"/>
+                        </constraints>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="https://github.com/NSRover/NinjaMode" id="We1-er-XCj">
+                            <font key="font" size="11" name="HelveticaNeue"/>
+                            <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Nhk-WH-KPG" secondAttribute="trailing" constant="20" id="1fM-9C-fg0"/>
                     <constraint firstItem="Nhk-WH-KPG" firstAttribute="leading" secondItem="cRO-De-KhY" secondAttribute="leading" constant="20" id="6OR-4w-onD"/>
+                    <constraint firstItem="IAk-oa-iia" firstAttribute="leading" secondItem="cRO-De-KhY" secondAttribute="leading" constant="20" id="81v-Cg-j8p"/>
                     <constraint firstItem="7ej-c7-nvz" firstAttribute="top" secondItem="Nhk-WH-KPG" secondAttribute="bottom" id="9Rp-vI-xny"/>
+                    <constraint firstItem="eTI-5y-BXS" firstAttribute="top" secondItem="IAk-oa-iia" secondAttribute="bottom" constant="5" id="OPd-NZ-lcD"/>
                     <constraint firstAttribute="trailing" secondItem="7ej-c7-nvz" secondAttribute="trailing" constant="20" id="PPg-pk-oGB"/>
                     <constraint firstItem="Nhk-WH-KPG" firstAttribute="top" secondItem="cRO-De-KhY" secondAttribute="top" id="RvI-fy-YkS"/>
+                    <constraint firstItem="5eF-rA-hup" firstAttribute="top" secondItem="eTI-5y-BXS" secondAttribute="bottom" id="aMq-qC-7Xp"/>
                     <constraint firstItem="7ej-c7-nvz" firstAttribute="leading" secondItem="cRO-De-KhY" secondAttribute="leading" constant="20" id="dTJ-Zl-E76"/>
+                    <constraint firstAttribute="trailing" secondItem="IAk-oa-iia" secondAttribute="trailing" constant="20" id="iZd-76-kNZ"/>
+                    <constraint firstItem="5eF-rA-hup" firstAttribute="leading" secondItem="cRO-De-KhY" secondAttribute="leading" constant="20" id="mG1-Qo-81M"/>
+                    <constraint firstItem="eTI-5y-BXS" firstAttribute="leading" secondItem="cRO-De-KhY" secondAttribute="leading" constant="20" id="pon-GT-kx1"/>
+                    <constraint firstItem="IAk-oa-iia" firstAttribute="top" secondItem="7ej-c7-nvz" secondAttribute="bottom" id="sQu-fM-AN9"/>
+                    <constraint firstAttribute="trailing" secondItem="5eF-rA-hup" secondAttribute="trailing" constant="20" id="yNB-CG-2s6"/>
+                    <constraint firstAttribute="trailing" secondItem="eTI-5y-BXS" secondAttribute="trailing" constant="20" id="z40-VQ-gnA"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="49.5" y="423"/>
+            <point key="canvasLocation" x="103.5" y="508.5"/>
         </window>
     </objects>
 </document>

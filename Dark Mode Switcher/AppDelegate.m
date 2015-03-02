@@ -10,11 +10,19 @@
 
 @interface AppDelegate () <NSMenuDelegate>
 @property (weak) IBOutlet NSWindow *window;
+
+// About
 @property (nonatomic, retain) IBOutlet NSTextField *aboutLabel;
+
+//  Menu
 @property (nonatomic, retain) IBOutlet NSMenu *statusMenu;
 @property (nonatomic, retain) IBOutlet NSMenuItem *enableDarkModeMenuItem;
 @property (nonatomic, retain) IBOutlet NSMenuItem *openAtLoginMenuItem;
+
+// Status
 @property (strong, nonatomic) NSStatusItem *statusItem;
+
+// Session properties
 @property (assign, nonatomic) BOOL darkModeOn;
 @property (assign, nonatomic) BOOL openAtLogin;
 
@@ -28,7 +36,7 @@
     self.statusItem.menu = self.statusMenu;
     
     // Set the version label
-    self.aboutLabel.stringValue = [NSString stringWithFormat:@"Version %@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+    self.aboutLabel.stringValue = [NSString stringWithFormat:@"Version %@ Build %@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"], [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]];
 }
 
 

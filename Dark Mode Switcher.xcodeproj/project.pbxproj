@@ -121,6 +121,7 @@
 				5536A2A71AA44A6200472B0D /* Sources */,
 				5536A2A81AA44A6200472B0D /* Frameworks */,
 				5536A2A91AA44A6200472B0D /* Resources */,
+				554E15291AA4D3930009D250 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -204,6 +205,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		554E15291AA4D3930009D250 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "#!/bin/bash\nbN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbN=$((0x$bN))\nbN=$(($bN + 1))\nbN=$(printf \"%X\" $bN)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bN\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5536A2A71AA44A6200472B0D /* Sources */ = {
@@ -401,6 +418,7 @@
 				5536A2CA1AA44A6300472B0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5536A2CB1AA44A6300472B0D /* Build configuration list for PBXNativeTarget "Dark Mode SwitcherTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +427,7 @@
 				5536A2CD1AA44A6300472B0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
