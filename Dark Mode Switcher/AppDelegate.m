@@ -25,8 +25,11 @@
 // Session properties
 @property (assign, nonatomic) BOOL darkModeOn;
 @property (assign, nonatomic) BOOL openAtLogin;
+@property (nonatomic, retain) NSTimer *toggleOnTimer;
+@property (nonatomic, retain) NSTimer *toggleOffTimer;
 
 - (LSSharedFileListItemRef)itemRefInLoginItems;
+- (void)turnDarkModeOn:(BOOL)isOn;
 @end
 
 @implementation AppDelegate
@@ -83,6 +86,19 @@
     return res;
 }
 
+- (void)turnDarkModeOn:(BOOL)isOn {
+    if (isOn) {
+        CFPreferencesSetValue((CFStringRef)@"AppleInterfaceStyle", @"Dark", kCFPreferencesAnyApplication, kCFPreferencesCurrentUser, kCFPreferencesCurrentHost);
+    }
+    else {
+        CFPreferencesSetValue((CFStringRef)@"AppleInterfaceStyle", NULL, kCFPreferencesAnyApplication, kCFPreferencesCurrentUser, kCFPreferencesCurrentHost);
+    }
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        CFNotificationCenterPostNotification(CFNotificationCenterGetDistributedCenter(), (CFStringRef)@"AppleInterfaceThemeChangedNotification", NULL, NULL, YES);
+    });
+}
+
 
 
 
@@ -92,17 +108,13 @@
     if (self.darkModeOn) {
         self.darkModeOn = NO;
         self.enableDarkModeMenuItem.state = NSOffState;
-        CFPreferencesSetValue((CFStringRef)@"AppleInterfaceStyle", NULL, kCFPreferencesAnyApplication, kCFPreferencesCurrentUser, kCFPreferencesCurrentHost);
+        [self turnDarkModeOn:NO];
     }
     else {
         self.darkModeOn = YES;
         self.enableDarkModeMenuItem.state = NSOnState;
-        CFPreferencesSetValue((CFStringRef)@"AppleInterfaceStyle", @"Dark", kCFPreferencesAnyApplication, kCFPreferencesCurrentUser, kCFPreferencesCurrentHost);
+        [self turnDarkModeOn:YES];
     }
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        CFNotificationCenterPostNotification(CFNotificationCenterGetDistributedCenter(), (CFStringRef)@"AppleInterfaceThemeChangedNotification", NULL, NULL, YES);
-    });
 }
 
 - (IBAction)openAtLoginAction:(NSMenuItem *)item {
