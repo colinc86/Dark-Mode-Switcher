@@ -51,39 +51,51 @@
             </items>
             <point key="canvasLocation" x="92.5" y="265.5"/>
         </menu>
-        <window title="Dark Mode Switcher" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="DMSAbout" animationBehavior="default" id="tfm-aF-3LZ" customClass="NSPanel">
+        <window title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="DMSAbout" animationBehavior="default" id="tfm-aF-3LZ" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="946" y="709" width="273" height="136"/>
+            <rect key="contentRect" x="946" y="709" width="273" height="133"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="cRO-De-KhY">
-                <rect key="frame" x="0.0" y="0.0" width="273" height="136"/>
+                <rect key="frame" x="0.0" y="0.0" width="273" height="133"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nhk-WH-KPG">
-                        <rect key="frame" x="18" y="99" width="237" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="version" id="P27-mg-Mdd">
-                            <font key="font" metaFont="system"/>
+                        <rect key="frame" x="74" y="82" width="181" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="version" id="P27-mg-Mdd">
+                            <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ej-c7-nvz">
-                        <rect key="frame" x="18" y="74" width="237" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="by Colin Campbell" id="JN4-Ce-2xd">
-                            <font key="font" metaFont="system"/>
+                        <rect key="frame" x="74" y="65" width="181" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="© 2015 Colin Campbell" id="JN4-Ce-2xd">
+                            <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSk-aC-LEt">
+                        <rect key="frame" x="74" y="99" width="181" height="14"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Dark Mode Switcher" id="JCY-p8-EpY">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dB3-HO-002">
+                        <rect key="frame" x="20" y="65" width="48" height="48"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo" id="klD-qp-im0"/>
+                    </imageView>
                     <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-oa-iia">
-                        <rect key="frame" x="20" y="63" width="233" height="5"/>
+                        <rect key="frame" x="20" y="54" width="233" height="5"/>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <font key="titleFont" metaFont="system"/>
                     </box>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-5y-BXS">
-                        <rect key="frame" x="18" y="43" width="237" height="14"/>
+                        <rect key="frame" x="18" y="34" width="237" height="14"/>
                         <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Based on NinjaMode © 2014 NSRover" id="9MM-Ha-DgY">
                             <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -91,7 +103,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5eF-rA-hup">
-                        <rect key="frame" x="18" y="21" width="237" height="14"/>
+                        <rect key="frame" x="18" y="17" width="237" height="14"/>
                         <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="https://github.com/NSRover/NinjaMode" id="We1-er-XCj">
                             <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -100,8 +112,11 @@
                     </textField>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="92.5" y="452"/>
+            <point key="canvasLocation" x="92.5" y="450.5"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="zJp-fh-81x"/>
     </objects>
+    <resources>
+        <image name="logo" width="512" height="512"/>
+    </resources>
 </document>
